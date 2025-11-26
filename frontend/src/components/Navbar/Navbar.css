@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  padding: 30px 100px;
+  font-family: "poppins";
+}
+
+.navbar a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none; /* delete underline */
+  color: #000;
+  transition: 0.5s;
+}
+
+.navbar .navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .navbar-right li {
+  list-style: none; /* del .dot */
+  font-weight: 500;
+}
+
+.navbar .navbar-right li a {
+  position: relative; /* để ::after định vị */
+  text-decoration: none; /* delete underline */
+  cursor: pointer;
+  color: rgb(70, 70, 70);
+  transition: color 0.3s;
+}
+
+.navbar .navbar-right li.active a {
+  padding-bottom: 2px;
+  border-bottom: 2px solid oklch(51.364% 0.11997 259.463);
+  color: oklch(45.373% 0.13529 259.853);
+}
+
+.navbar .navbar-right li.no-active a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  border-bottom: 2px solid oklch(51.364% 0.11997 259.463);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s;
+}
+.navbar .navbar-right li a:hover {
+  color: oklch(40.267% 0.1165 259.509);
+}
+.navbar .navbar-right li a:hover::after {
+  transform: scaleX(1);
+}
