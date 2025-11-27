@@ -12,6 +12,12 @@
   background-color: transparent;
   padding: 30px 100px;
   font-family: "poppins";
+
+  position: fixed; /* cố định navbar */
+  top: 0; /* sát mép trên */
+  left: 0;
+  width: 100%; /* full chiều ngang */
+  z-index: 1000; /* nổi trên các phần tử khác */
 }
 
 .navbar a {
@@ -24,7 +30,7 @@
 
 .navbar .navbar-right {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .navbar .navbar-right li {
@@ -36,14 +42,14 @@
   position: relative; /* để ::after định vị */
   text-decoration: none; /* delete underline */
   cursor: pointer;
-  color: rgb(70, 70, 70);
+  color: #464646;
   transition: color 0.3s;
 }
 
 .navbar .navbar-right li.active a {
   padding-bottom: 2px;
-  border-bottom: 2px solid oklch(51.364% 0.11997 259.463);
-  color: oklch(45.373% 0.13529 259.853);
+  border-bottom: 2px solid #3b66ab;
+  color: #2453a0;
 }
 
 .navbar .navbar-right li.no-active a::after {
@@ -52,13 +58,13 @@
   left: 0;
   bottom: -4px;
   width: 100%;
-  border-bottom: 2px solid oklch(51.364% 0.11997 259.463);
+  border-bottom: 2px solid #3b66ab;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.35s;
+  transition: transform 0.5s;
 }
 .navbar .navbar-right li a:hover {
-  color: oklch(40.267% 0.1165 259.509);
+  color: #1e4686;
 }
 .navbar .navbar-right li a:hover::after {
   transform: scaleX(1);

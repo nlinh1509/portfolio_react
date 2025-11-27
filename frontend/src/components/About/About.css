@@ -2,8 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
-  gap: 20px;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  gap: 40px;
+  /* background-color: white; */
 }
 .about .avatar img {
   width: 300px;
@@ -11,10 +14,47 @@
 }
 
 .about .content {
-  width: 400px;
+  width: 30vw;
+}
+.about .content h1 {
+}
+
+.about .content span {
+  color: #3366b9;
+  text-shadow: 0 0 20px #87a4d3;
+}
+.about .content p {
+  padding: 10px 0px;
+  font-weight: 500;
+  color: #464646;
 }
 
 .about .content .social img {
   width: 30px;
-  margin: 10px;
+  margin: 10px 20px 10px 0px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.about .content .social img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  /* rgba(150, 189, 295, 2); */
+}
+
+.about .content button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 0px; 
+  background-color: #8ab2f1;
+  color: #2d5493;
+  
+  font-weight: 700;
+  font-size: 12px;
+  box-shadow: 0 0 10px rgba(59, 102, 171, 0.5);
+  transition: 0.5s;
+}
+.about .content button:hover {
+  transform: scale(1.2);
 }

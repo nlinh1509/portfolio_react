@@ -10,7 +10,7 @@ const About = () => {
       </div>
 
       <div className="content">
-        <p>I'm</p>
+        <h1>Hi, I'm <span>a Developer</span></h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
           necessitatibus fugiat illum, minima facere quibusdam possimus dolores
