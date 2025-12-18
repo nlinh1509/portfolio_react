@@ -12,17 +12,33 @@ const About = () => {
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
           necessitatibus fugiat illum, minima facere quibusdam possimus dolores
-          in hic nostrum!
+          in hic nostrum! lo
         </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Exercitationem culpa delectus quod neque esse, architecto natus animi
+          repellat rerum? Doloremque deserunt repellat culpa voluptatem
+        </p>
+
         <div className="social">
-          <a href="https://www.linkedin.com/in/levonhatlinh/" target="_blank">
-            <img src={assets.linkedin} alt="linkedin" />
+          <a
+            href="https://www.linkedin.com/in/levonhatlinh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://github.com/nlinh1509" target="_blank">
-            <img src={assets.github} alt="github" />
+
+          <a
+            href="https://github.com/nlinh1509"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-github"></i>
           </a>
-          <a href="mailto:levonhatlinh.work@gmail.com" target="_blank">
-            <img src={assets.mail} alt="mail" />
+
+          <a href="mailto:levonhatlinh.work@gmail.com">
+            <i className="fa-solid fa-envelope"></i>
           </a>
         </div>
         <button>Download my CV</button>
