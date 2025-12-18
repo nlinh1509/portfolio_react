@@ -6,7 +6,9 @@ const Navbar = () => {
   const [item, setItems] = useState("about");
   return (
     <div className="navbar">
-      <Link to="/">le vo nhat linh</Link>
+      <Link className="name" to="/">
+        le vo nhat linh
+      </Link>
 
       <ul className="navbar-right">
         <li
@@ -41,7 +43,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button >Contact me</button>
+      <button>Contact me</button>
     </div>
   );
 };
