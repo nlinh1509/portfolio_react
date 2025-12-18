@@ -5,12 +5,10 @@ import { assets } from "../../assets/assets";
 const About = () => {
   return (
     <div className="about">
-      <div className="avatar">
-        <img src={assets.avatar} alt="nlinh" />
-      </div>
-
       <div className="content">
-        <h1>Hi, I'm <span>a Developer</span></h1>
+        <h1>
+          Hi, I'm <span>a Developer</span>
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
           necessitatibus fugiat illum, minima facere quibusdam possimus dolores
@@ -28,6 +26,10 @@ const About = () => {
           </a>
         </div>
         <button>Download my CV</button>
+      </div>
+
+      <div className="avatar">
+        <img src={assets.avatar} alt="nlinh" />
       </div>
     </div>
   );

@@ -6,17 +6,13 @@
   width: 100%;
   margin: 0px;
   gap: 40px;
-  /* background-color: white; */
-}
-.about .avatar img {
-  width: 300px;
-  border-radius: 50%;
 }
 
 .about .content {
-  width: 30vw;
+  width: 40vw;
 }
 .about .content h1 {
+  color: white;
 }
 
 .about .content span {
@@ -38,7 +34,9 @@
 
 .about .content .social img:hover {
   transform: scale(1.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 2); */
+  box-shadow: 0 0 10px #8ab2f1;
+
   /* rgba(150, 189, 295, 2); */
 }
 
@@ -46,15 +44,24 @@
   cursor: pointer;
   padding: 8px 12px;
   border-radius: 10px;
-  border: 0px; 
+  border: 0px;
   background-color: #8ab2f1;
   color: #2d5493;
-  
+
   font-weight: 700;
   font-size: 12px;
   box-shadow: 0 0 10px rgba(59, 102, 171, 0.5);
+
   transition: 0.5s;
 }
 .about .content button:hover {
   transform: scale(1.2);
+}
+
+.about .avatar img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border: 5px solid #464646;
 }

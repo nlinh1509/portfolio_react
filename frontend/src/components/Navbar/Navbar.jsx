@@ -39,13 +39,9 @@ const Navbar = () => {
         >
           <a href="#">Experience</a>
         </li>
-        <li
-          onClick={() => setItems("contact")}
-          className={item === "contact" ? "active" : "no-active"}
-        >
-          <a href="#">Contact</a>
-        </li>
       </ul>
+
+      <button >Contact me</button>
     </div>
   );
 };

@@ -1,10 +1,8 @@
 body {
-  /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173)); */
-
-  background: linear-gradient(
-    to right,
-    rgb(255, 255, 255),
-    lch(81.42% 27.89 272.16)
-  );
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: rgba(10, 14, 20, 0.98);
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  background-size: 120px 120px;
 }
