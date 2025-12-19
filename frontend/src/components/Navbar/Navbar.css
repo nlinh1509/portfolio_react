@@ -1,15 +1,32 @@
 .navbar {
   display: flex;
-  margin: 20px 80px;
+  padding: 20px 80px;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
 }
 
-.navbar .name {
+/* .navbar-scrolled {
+  display: flex;
+  padding: 20px 80px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  background-color: #27374f;
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  background-size: 100px 100px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+} */
+
+.name {
   font-size: 20px;
 }
-.navbar a {
+a {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none; /* delete underline */
@@ -17,17 +34,17 @@
   transition: 0.5s;
 }
 
-.navbar .navbar-right {
+.navbar-right {
   display: flex;
   gap: 40px;
 }
 
-.navbar .navbar-right li {
+.navbar-right li {
   list-style: none; /* del .dot */
   font-weight: 500;
 }
 
-.navbar .navbar-right li a {
+.navbar-right li a {
   position: relative; /* để ::after định vị */
   text-decoration: none; /* delete underline */
   cursor: pointer;
@@ -35,13 +52,13 @@
   transition: color 0.3s;
 }
 
-.navbar .navbar-right li.active a {
+.navbar-right li.active a {
   padding-bottom: 2px;
   border-bottom: 2px solid #427ad4;
   color: #427ad4;
 }
 
-.navbar .navbar-right li.no-active a::after {
+.navbar-right li.no-active a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -52,14 +69,14 @@
   transform-origin: left;
   transition: transform 0.5s;
 }
-.navbar .navbar-right li a:hover {
+.navbar-right li a:hover {
   color: #427ad4;
 }
-.navbar .navbar-right li a:hover::after {
+.navbar-right li a:hover::after {
   transform: scaleX(1);
 }
 
-.navbar button {
+button {
   cursor: pointer;
   padding: 12px 22px 10px 22px;
   border-radius: 50px;

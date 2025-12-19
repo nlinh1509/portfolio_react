@@ -6,6 +6,7 @@ const Navbar = () => {
   const [item, setItems] = useState("about");
 
   return (
+    // {scrolled ? "navbar-scrolled" : "navbar-top"}
     <div className="navbar">
       <Link className="name" to="/">
         le vo nhat linh
