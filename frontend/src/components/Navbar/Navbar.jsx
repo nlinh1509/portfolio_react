@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [item, setItems] = useState("about");
+
   return (
     <div className="navbar">
       <Link className="name" to="/">
