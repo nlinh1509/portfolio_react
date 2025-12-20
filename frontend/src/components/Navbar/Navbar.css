@@ -1,7 +1,7 @@
 .navbar-top,
 .navbar-scrolled {
   display: flex;
-  padding: 20px 80px;
+  padding: 20px 100px;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
@@ -17,31 +17,14 @@
 
 .navbar-scrolled {
   backdrop-filter: blur(30%);
-  border-bottom: 1px solid #0a1c3a;
+  border-bottom: 1px solid #414c61;
 }
-
-/* .navbar {
-  display: flex;
-  padding: 20px 80px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  background-color: #27374f;
-  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-  background-size: 100px 100px;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-} */
 
 .name {
-  font-size: 20px;
+  font-size: 18px;
 }
 a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none; /* delete underline */
   color: #fff;
@@ -98,7 +81,7 @@ button {
   background: transparent;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 14px;
+  font-size: 13px;
 
   transition: 0.3s;
 }
