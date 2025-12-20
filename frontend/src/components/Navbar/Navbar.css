@@ -1,12 +1,26 @@
-.navbar {
+.navbar-top,
+.navbar-scrolled {
   display: flex;
   padding: 20px 80px;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  background-color: #27374f;
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  background-size: 100px 100px;
 }
 
-/* .navbar-scrolled {
+.navbar-scrolled {
+  backdrop-filter: blur(30%);
+  border-bottom: 1px solid #0a1c3a;
+}
+
+/* .navbar {
   display: flex;
   padding: 20px 80px;
   justify-content: space-between;

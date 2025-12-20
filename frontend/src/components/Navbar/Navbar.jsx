@@ -4,10 +4,24 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [item, setItems] = useState("about");
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    // {scrolled ? "navbar-scrolled" : "navbar-top"}
-    <div className="navbar">
+    // <div className="navbar">
+
+    <div className={scrolled ? "navbar-scrolled" : "navbar-top"}>
       <Link className="name" to="/">
         le vo nhat linh
       </Link>
