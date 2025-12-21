@@ -14,20 +14,20 @@
 }
 .about .content h1 {
   color: white;
-  font-size: 1.875rem;
+  font-size: 28px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
 .about .content span {
-  color: #3366b9;
+  color: #416eb6;
   /* text-shadow: 0 0 20px #87a4d3; */
 }
 .about .content p {
   padding: 10px 0px;
   font-weight: 200;
   color: #ffffffb0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   padding-bottom: 0;
 }
@@ -41,9 +41,9 @@
 
 .social a {
   display: inline-flex;
-  font-size: 38px;
-  width: 38px;
-  color: #427ad4;
+  font-size: 32px;
+  width: 32px;
+  color: #416eb6;
   transition: 0.5s;
 }
 
@@ -56,7 +56,7 @@
 .content button {
   cursor: pointer;
   padding: 8px 12px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: 0px;
   background-color: #ffffff;
   color: #1c3e74;
