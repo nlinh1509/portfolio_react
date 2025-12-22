@@ -2,29 +2,11 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .project h1 {
   color: #fff;
   padding-bottom: 30px;
+  text-align: center;
 }
 
-.project-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #dbdada;
-  /* background-color: #446097; */
-
-  margin: 0px 200px;
-  border-radius: 20px;
-  padding: 20px 50px;
-
-  text-align: start;
-}
-
-.project-card img {
-  width: 250px;
-  height: auto;
-}
