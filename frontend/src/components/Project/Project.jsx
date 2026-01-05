@@ -38,7 +38,9 @@ const Project = () => {
                 <img src={project.image} alt="" />
               </div>
               <div className="project-mobile-info">
-                <h2>{project.title}</h2>
+                <h2>
+                  EcoTrack <br /> Waste Sorting App
+                </h2>
                 <p>{project.description}</p>
               </div>
             </div>

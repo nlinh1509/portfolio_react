@@ -31,7 +31,7 @@ export const projectsData = [
     title: "EcoTrack - Waste Sorting App",
     category: "Mobile",
     description:
-      "EcoTrack is a cross-platform mobile app that leverages AI to assist users in classifying waste accurately. Through gamification and eco-friendly incentives.",
+"Waste Sorting App is an Android app that uses AI to classify waste, combined with gamification.",
     image: iphone,
     // technologies: ["React", "AI", "CSS"],
   },
