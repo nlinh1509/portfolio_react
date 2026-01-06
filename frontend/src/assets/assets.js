@@ -1,5 +1,4 @@
 import avatar from "./avatar.png";
-
 import iphone from "./iphone.png";
 import laptop from "./laptop.png";
 
@@ -15,6 +14,11 @@ export const projectsData = [
     description:
       "A smart dashboard for managing food orders with real-time tracking features.",
     image: laptop,
+    technologies: [
+      "fa-brands fa-react",
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-node-js",
+    ],
     // technologies: ["React", "AI", "CSS"],
   },
   {
@@ -31,8 +35,11 @@ export const projectsData = [
     title: "EcoTrack - Waste Sorting App",
     category: "Mobile",
     description:
-"Waste Sorting App is an Android app that uses AI to classify waste, combined with gamification.",
+      "EcoTrack is an Android app that uses AI to classify waste, combined with gamification.",
     image: iphone,
+    technologies:[
+      
+    ],
     // technologies: ["React", "AI", "CSS"],
   },
 ];

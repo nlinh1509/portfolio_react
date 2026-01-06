@@ -1,36 +1,49 @@
 .project {
-  background-color: #E4E4E6;
-  padding: 50px 15%;
-}
-
-img {
-  width: 300px;
+  background-color: #f3f4f6;
+  padding: 50px 10%;
 }
 
 .project-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .project-container {
   display: flex;
-  gap: 30px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
 }
 
 .project-web,
 .project-mobile {
-  background-color: #EBEDF3;
-  border-radius: 50px;
-  outline: 1px solid #fff ;
+  background-color: #ebedf3;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-web:hover,
+.project-mobile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .project-left {
-  flex: 6.5;
+  flex: 7;
 }
 
 .project-right {
-  flex: 3.5;
+  flex: 3;
 }
 
 .project-left {
@@ -40,12 +53,16 @@ img {
 }
 
 h2 {
-  font-size: 16px;
-  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
 }
 
 .project-container p {
-  font-size: 12px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
 }
 
 /* web */
@@ -55,18 +72,21 @@ h2 {
   justify-content: center;
   padding: 30px;
   gap: 10px;
-  height: 200px;
+  height: 220px;
 }
 
 .project-web-img {
-  flex: 5;
+  flex: 4;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .project-web-img img {
   width: 100%;
 }
 
 .project-web-info {
-  flex: 5;
+  flex: 6;
 }
 
 /* mobile */
@@ -75,27 +95,30 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 30px 20px;
 
-  width: 200px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.project-mobile-img {
+  margin-bottom: 20px;
 }
 
 .project-mobile-img img {
   width: 160px;
+  height: auto;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
 }
 
 .project-mobile-info {
   display: flex;
   flex-direction: column;
-
-  align-items: center;
   text-align: center;
-}
-
-.project-mobile-info h2 {
 }
 
 .project-mobile-info p {
   text-align: justify;
-  width: 90%;
+  width: 100%;
 }

@@ -27,6 +27,11 @@ const Project = () => {
               <div className="project-web-info">
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
+                <div className="tech-stack">
+                  {project.technologies?.map((tech, index) => (
+                    <i key={index} className={tech}></i>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
