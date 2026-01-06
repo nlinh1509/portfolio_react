@@ -37,7 +37,7 @@ const Navbar = () => {
           onClick={() => setItems("project")}
           className={item === "project" ? "active" : "no-active"}
         >
-          <a href="#">Project</a>
+          <a href="#project">Project</a>
         </li>
         <li
           onClick={() => setItems("skills")}

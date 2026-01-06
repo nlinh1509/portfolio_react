@@ -11,7 +11,7 @@ const Project = () => {
   );
 
   return (
-    <div className="project">
+    <div id="project" className="project">
       <div className="project-header">
         <h1>My project</h1>
         <p>Here show my projects</p>
@@ -47,6 +47,11 @@ const Project = () => {
                   EcoTrack <br /> Waste Sorting App
                 </h2>
                 <p>{project.description}</p>
+                <div className="tech-stack">
+                  {project.technologies?.map((tech, index) => (
+                    <i key={index} className={tech}></i>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

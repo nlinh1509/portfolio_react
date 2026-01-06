@@ -12,3 +12,8 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+html {
+  /* Khi click vào link neo (#), trang web sẽ tự động trừ hao 100px phía trên */
+  scroll-padding-top: 68px;
+  scroll-behavior: smooth; /* Cuộn mượt mà */
+}

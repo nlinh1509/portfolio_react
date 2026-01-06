@@ -1,6 +1,10 @@
 .project {
   background-color: #f3f4f6;
-  padding: 50px 10%;
+  padding: 30px 10%;
+  box-sizing: border-box;
+
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .project-header {
@@ -53,14 +57,14 @@
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 8px;
   color: #333;
 }
 
 .project-container p {
-  font-size: 14px;
+  font-size: 16px;
   color: #666;
   line-height: 1.5;
 }
@@ -71,7 +75,7 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 30px;
-  gap: 10px;
+  gap: 20px;
   height: 220px;
 }
 
@@ -90,7 +94,6 @@ h2 {
 }
 
 /* mobile */
-
 .project-mobile {
   display: flex;
   flex-direction: column;
@@ -119,6 +122,50 @@ h2 {
 }
 
 .project-mobile-info p {
-  text-align: justify;
+  text-align: start;
   width: 100%;
+}
+
+.project-mobile-info .tech-stack {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* tech */
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.project-web-info .tech-stack {
+  font-size: 28px;
+}
+
+.fa-react {
+  color: #61dafb;
+}
+.fa-css3-alt {
+  color: #264de4;
+}
+
+.fa-node-js {
+  color: #339933;
+}
+
+.fa-flutter {
+  color: #02569b;
+}
+
+.fa-fire {
+  color: #ffa611;
+}
+
+.fa-brain {
+  color: #8e24aa;
+}
+
+.fa-cloud {
+  color: #3448c5;
 }

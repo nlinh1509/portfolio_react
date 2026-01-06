@@ -28,6 +28,11 @@ export const projectsData = [
     description: "My personal portfolio showcasing my projects and skills.",
     image: laptop,
     // technologies: ["React", "Framer Motion"],
+    technologies: [
+      "fa-brands fa-react",
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-node-js",
+    ],
   },
 
   {
@@ -35,10 +40,13 @@ export const projectsData = [
     title: "EcoTrack - Waste Sorting App",
     category: "Mobile",
     description:
-      "EcoTrack is an Android app that uses AI to classify waste, combined with gamification.",
+      "EcoTrack is an Android app that uses AI to classify waste with gamification elements.",
     image: iphone,
-    technologies:[
-      
+    technologies: [
+      "fa-brands fa-flutter",
+      "fa-solid fa-fire",
+      "fa-solid fa-brain",
+      "fa-solid fa-cloud",
     ],
     // technologies: ["React", "AI", "CSS"],
   },
