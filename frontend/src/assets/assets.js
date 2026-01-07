@@ -19,6 +19,7 @@ export const projectsData = [
       "fa-brands fa-css3-alt",
       "fa-brands fa-node-js",
     ],
+    link: "https://github.com/nlinh1509/Food_delivery",
     // technologies: ["React", "AI", "CSS"],
   },
   {
@@ -33,6 +34,7 @@ export const projectsData = [
       "fa-brands fa-css3-alt",
       "fa-brands fa-node-js",
     ],
+    link: "https://github.com/nlinh1509/Food_delivery",
   },
 
   {
@@ -48,6 +50,8 @@ export const projectsData = [
       "fa-solid fa-brain",
       "fa-solid fa-cloud",
     ],
+    link: "https://github.com/trmzaiu/ecotrack-waste-sorting",
+
     // technologies: ["React", "AI", "CSS"],
   },
 ];

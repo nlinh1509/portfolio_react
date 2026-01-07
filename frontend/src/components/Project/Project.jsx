@@ -1,6 +1,7 @@
 import React from "react";
 import "./Project.css";
 import { projectsData } from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const webProjects = projectsData.filter(
@@ -9,6 +10,14 @@ const Project = () => {
   const mobileProjects = projectsData.filter(
     (project) => project.category === "Mobile"
   );
+
+  const handleProjectClick = (link) => {
+    if (link) {
+      window.open(link, "_blank");
+    } else {
+      alert("Link for this project is updating...");
+    }
+  };
 
   return (
     <div id="project" className="project">
@@ -20,7 +29,11 @@ const Project = () => {
       <div className="project-container">
         <div className="project-left">
           {webProjects.map((project, index) => (
-            <div key={index} className="project-web">
+            <div
+              key={index}
+              className="project-web"
+              onClick={() => handleProjectClick(project.link)}
+            >
               <div className="project-web-img">
                 <img src={project.image} alt="" />
               </div>
@@ -38,7 +51,11 @@ const Project = () => {
         </div>
         <div className="project-right">
           {mobileProjects.map((project, index) => (
-            <div key={index} className="project-mobile">
+            <div
+              key={index}
+              className="project-mobile"
+              onClick={() => handleProjectClick(project.link)}
+            >
               <div className="project-mobile-img">
                 <img src={project.image} alt="" />
               </div>

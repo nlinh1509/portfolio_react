@@ -8,8 +8,8 @@
 
   padding-top: 50px;
   padding-bottom: 80px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 
   /* ẩn mọi thứ bị tràn ra */
   overflow: hidden;
@@ -114,7 +114,7 @@ h2 {
 }
 
 .project-web-img {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
   height: 100%;
   display: flex;
   align-items: center;
