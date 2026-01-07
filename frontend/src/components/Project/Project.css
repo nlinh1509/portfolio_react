@@ -1,28 +1,48 @@
 .project {
-  background-color: #f3f4f6;
-  padding: 30px 10%;
+  background-color: #f8f9fa;
+  /* padding: 30px 10%; */
   box-sizing: border-box;
 
-  height: 100vh;
+  height: calc(100vh - 65px);
   box-sizing: border-box;
+
+  padding-top: 50px;
+  padding-bottom: 80px;
+  padding-left: 20%;
+  padding-right: 20%;
+
+  /* ẩn mọi thứ bị tràn ra */
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .project-header {
+  flex: 0 0 auto;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .project-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.project-header p {
+  margin: 5px 0 0 0;
 }
 
 .project-container {
+  flex: 1;
+
   display: flex;
-  gap: 24px;
+  gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: stretch;
+  width: 100%;
+  min-height: 0;
 }
 
 .project-web,
@@ -34,6 +54,8 @@
 
   cursor: pointer;
   transition: transform 0.3s ease;
+
+  min-height: 0;
 }
 
 .project-web:hover,
@@ -53,20 +75,29 @@
 .project-left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
+
+  height: 100%;
+  min-height: 0;
+}
+
+.project-right {
+  height: 100%;
+  min-height: 0;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   color: #333;
 }
 
 .project-container p {
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
   line-height: 1.5;
+
 }
 
 /* web */
@@ -74,19 +105,30 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  gap: 20px;
-  height: 220px;
+  /* padding: 15px 20px; */
+  padding: 0 35px;
+  gap: 30px;
+  /* height: 220px; */
+
+  flex: 1;
 }
 
 .project-web-img {
-  flex: 4;
+  flex: 0 0 50%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .project-web-img img {
   width: 100%;
+
+  max-height: 150px;
+  width: auto;
+
+  object-fit: contain;
+
+  filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
 }
 
 .project-web-info {
@@ -98,20 +140,30 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
-
+  justify-content: center;
+  padding: 15px 25px;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
 
 .project-mobile-img {
-  margin-bottom: 20px;
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+  overflow: hidden; /* Cắt bỏ phần thừa */
+  min-height: 0;
 }
 
 .project-mobile-img img {
-  width: 160px;
-  height: auto;
+  width: auto;
+  height: 240px;
+
+  max-height: 100%;
   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -134,8 +186,8 @@ h2 {
 /* tech */
 .tech-stack {
   display: flex;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 12px;
+  margin-top: 10px;
   font-size: 24px;
 }
 
