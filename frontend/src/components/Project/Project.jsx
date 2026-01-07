@@ -61,7 +61,9 @@ const Project = () => {
               </div>
               <div className="project-mobile-info">
                 <h2>
-                  EcoTrack <br /> Waste Sorting App
+                  EcoTrack
+                  {/* <br /> */}
+                  {/* <span>Waste Sorting App</span> */}
                 </h2>
                 <p>{project.description}</p>
                 <div className="tech-stack">
