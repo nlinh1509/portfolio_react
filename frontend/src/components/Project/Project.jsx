@@ -1,7 +1,6 @@
 import React from "react";
 import "./Project.css";
 import { projectsData } from "../../assets/assets";
-import { Link } from "react-router-dom";
 
 const Project = () => {
   const webProjects = projectsData.filter(
@@ -40,9 +39,10 @@ const Project = () => {
               <div className="project-web-info">
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
+
                 <div className="tech-stack">
-                  {project.technologies?.map((tech, index) => (
-                    <i key={index} className={tech}></i>
+                  {project.technologies?.map((techUrl, index) => (
+                    <img key={index} src={techUrl} alt="" />
                   ))}
                 </div>
               </div>
@@ -67,8 +67,8 @@ const Project = () => {
                 </h2>
                 <p>{project.description}</p>
                 <div className="tech-stack">
-                  {project.technologies?.map((tech, index) => (
-                    <i key={index} className={tech}></i>
+                  {project.technologies?.map((techUrl, index) => (
+                    <img key={index} src={techUrl} alt="" />
                   ))}
                 </div>
               </div>

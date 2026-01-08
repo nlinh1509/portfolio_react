@@ -20,7 +20,6 @@ const Navbar = () => {
 
   return (
     // <div className="navbar">
-
     <div className={scrolled ? "navbar-scrolled" : "navbar-top"}>
       <Link className="name" to="/">
         le vo nhat linh
@@ -43,7 +42,7 @@ const Navbar = () => {
           onClick={() => setItems("skills")}
           className={item === "skills" ? "active" : "no-active"}
         >
-          <a href="#">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li
           onClick={() => setItems("education")}
