@@ -1,21 +1,23 @@
 .project {
   background-color: #f8f9fa;
+  background-color: transparent;
 
   /* height: calc(100vh - 75px); */
-  min-height: calc(100vh - 70px);
+  /* min-height: calc(100vh - 70px); */
   height: auto;
+  min-height: 100vh;
 
   box-sizing: border-box;
-
-  padding: 30px 15% 80px 15%;
+  padding: 0px 15% 80px 15%;
   display: flex;
   flex-direction: column;
 }
 
 .project-header {
+  color: #fff;
   flex: 0 0 auto;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .project-header h1 {
@@ -25,6 +27,7 @@
 
 .project-header p {
   margin: 5px 0 0 0;
+  color: #abb6c6;
 }
 
 .project-container {
@@ -39,9 +42,9 @@
 
 .project-web,
 .project-mobile {
-  background-color: #ebedf3;
+  background-color: #2a323e;
   border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 
   cursor: pointer;
@@ -53,7 +56,8 @@
 .project-web:hover,
 .project-mobile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 .project-left,
@@ -75,12 +79,12 @@ h2 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
-  color: #333;
+  color: #fff;
 }
 
 .project-container p {
   font-size: 14px;
-  color: #666;
+  color: #b0b8c4;
   line-height: 1.5;
 }
 
@@ -107,7 +111,7 @@ h2 {
 
   object-fit: contain;
 
-  filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
 }
 
 .project-web-info {
@@ -143,7 +147,7 @@ h2 {
 
   object-fit: contain;
 
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
 }
 
 .project-mobile-info {

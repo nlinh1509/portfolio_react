@@ -21,7 +21,7 @@
 }
 
 .navbar-scrolled {
-  backdrop-filter: blur(30%);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #43516c88;
 }
 
@@ -36,31 +36,31 @@ a {
   transition: 0.5s;
 }
 
-.navbar-right {
+.navbar-center {
   display: flex;
   gap: 40px;
 }
 
-.navbar-right li {
-  list-style: none; /* del .dot */
+.navbar-center li {
   font-weight: 500;
+  /* width: 85px; */
 }
 
-.navbar-right li a {
-  position: relative; /* để ::after định vị */
-  text-decoration: none; /* delete underline */
+.navbar-center li a {
+  position: relative; 
+  text-decoration: none; 
   cursor: pointer;
   color: #abb6c6;
   transition: color 0.3s;
 }
 
-.navbar-right li.active a {
+.navbar-center li.active a {
   padding-bottom: 2px;
   border-bottom: 2px solid #427ad4;
   color: #427ad4;
 }
 
-.navbar-right li.no-active a::after {
+.navbar-center li.no-active a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -71,10 +71,10 @@ a {
   transform-origin: left;
   transition: transform 0.5s;
 }
-.navbar-right li a:hover {
+.navbar-center li a:hover {
   color: #427ad4;
 }
-.navbar-right li a:hover::after {
+.navbar-center li a:hover::after {
   transform: scaleX(1);
 }
 

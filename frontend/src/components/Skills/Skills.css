@@ -1,0 +1,29 @@
+.skills {
+  color: #fff;
+  /* min-height: calc(100vh - 60px); */
+  /* height: auto; */
+
+  height: auto;
+  height: 100vh;
+}
+img {
+  width: 50px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  justify-items: center;
+  gap: 40px;
+  width: 60%;
+}

@@ -88,11 +88,7 @@ export const techLogo = [
     name: "Node.js",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
-  {
-    name: "Express.js",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    style: "icon-white", // Logo đen -> cần đảo màu
-  },
+
   {
     name: "PostgreSQL",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",

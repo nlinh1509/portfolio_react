@@ -25,7 +25,7 @@ const Navbar = () => {
         le vo nhat linh
       </Link>
 
-      <ul className="navbar-right">
+      <ul className="navbar-center">
         <li
           onClick={() => setItems("about")}
           className={item === "about" ? "active" : "no-active"}
@@ -50,12 +50,13 @@ const Navbar = () => {
         >
           <a href="#">Education</a>
         </li>
+        {/*         
         <li
           onClick={() => setItems("experience")}
           className={item === "experience" ? "active" : "no-active"}
         >
           <a href="#">Experience</a>
-        </li>
+        </li> */}
       </ul>
 
       <button>Contact me</button>
