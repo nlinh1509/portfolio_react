@@ -26,7 +26,7 @@ export const projectsData = [
     id: 2,
     title: "Portfolio Website",
     category: "Web",
-    description: "My personal portfolio showcasing my projects and skills.",
+    description: "My personal portfolio showcasing my projects and names.",
     image: laptop,
     // technologies: ["React", "Framer Motion"],
     technologies: [
@@ -51,5 +51,54 @@ export const projectsData = [
     link: "https://github.com/trmzaiu/ecotrack-waste-sorting",
 
     // technologies: ["React", "AI", "CSS"],
+  },
+];
+
+export const techLogo = [
+  {
+    name: "Javascript",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "CSS",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    name: "Figma",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  },
+  {
+    name: "Git",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "React",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "Next.js",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    style: "icon-white", // Logo đen -> cần đảo màu
+  },
+  {
+    name: "Node.js",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Express.js",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    style: "icon-white", // Logo đen -> cần đảo màu
+  },
+  {
+    name: "PostgreSQL",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "MongoDB",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
 ];

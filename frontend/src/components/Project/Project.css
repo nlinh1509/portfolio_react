@@ -1,7 +1,5 @@
 .project {
   background-color: #f8f9fa;
-  /* padding: 30px 10%; */
-  box-sizing: border-box;
 
   /* height: calc(100vh - 75px); */
   min-height: calc(100vh - 70px);
@@ -9,10 +7,7 @@
 
   box-sizing: border-box;
 
-  padding: 50px 15% 80px 15%;
-
-  /* ẩn mọi thứ bị tràn ra */
-  /* overflow: hidden; */
+  padding: 30px 15% 80px 15%;
   display: flex;
   flex-direction: column;
 }
