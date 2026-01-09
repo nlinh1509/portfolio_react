@@ -1,10 +1,8 @@
 .skills {
   color: #fff;
   /* min-height: calc(100vh - 60px); */
-  /* height: auto; */
-
   height: auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 img {
   width: 50px;
@@ -26,4 +24,12 @@ img {
   justify-items: center;
   gap: 40px;
   width: 60%;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #d9dadb; 
+
+  transition: color 0.3s;
 }

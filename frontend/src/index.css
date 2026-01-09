@@ -1,5 +1,4 @@
 body {
-  /* background-color: rgba(10, 14, 20, 0.98); */
   background-color: #27374f;
   background-color: #21252d;
 
@@ -13,6 +12,5 @@ body {
   font-family: "Poppins", sans-serif;
 }
 html {
-  /* scroll-padding-top: 55px; */
-  scroll-behavior: smooth; /* Cuộn mượt mà */
+  scroll-behavior: smooth; 
 }

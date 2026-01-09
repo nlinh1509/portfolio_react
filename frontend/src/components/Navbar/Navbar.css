@@ -15,7 +15,6 @@
 
   background-color: #27374f;
   background-color: #21252d;
-
   background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
   background-size: 100px 100px;
 }
@@ -42,8 +41,8 @@ a {
 }
 
 .navbar-center li {
+  list-style: none; 
   font-weight: 500;
-  /* width: 85px; */
 }
 
 .navbar-center li a {
