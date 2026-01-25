@@ -130,11 +130,23 @@
 }
 
 /* tech */
-
 .tech-stack {
   display: flex;
   gap: 10px;
+  color: #c1c1c1;
 }
+
+.tech-items {
+  width: 60px;
+  border: 0.1px solid #c1c1c1;
+  border-radius: 100px;
+  padding: 6px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* 
 .tech-pill {
   background: rgba(255, 255, 255, 0.05);

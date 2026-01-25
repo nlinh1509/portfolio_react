@@ -40,16 +40,20 @@ const Project = () => {
                 <p>{project.description}</p>
               </div>
 
-              <div className="tech-stack">
+              {/* <div className="tech-stack">
                 {project.technologies?.map((techUrl, idx) => (
                   <div key={idx} className="tech-pill">
                     <img src={techUrl} alt="tech" />
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               <div className="tech-stack">
-                <p>{project.technologies}</p>
+                {project.technologies?.map((item, index) => (
+                  <div key={index} className="tech-items">
+                    {item}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
