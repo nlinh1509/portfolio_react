@@ -12,8 +12,8 @@ const Project = () => {
   };
 
   return (
-    <div id="project" className="project">
-      <div className="project-header">
+    <div className="project">
+      <div id="project" className="project-header">
         <h1>My Projects</h1>
         <p>Discover my latest work & experiments.</p>
       </div>
@@ -40,14 +40,16 @@ const Project = () => {
                 <p>{project.description}</p>
               </div>
 
-              <div className="project-footer">
-                <div className="tech-stack">
-                  {project.technologies?.map((techUrl, idx) => (
-                    <div key={idx} className="tech-pill">
-                      <img src={techUrl} alt="tech" />
-                    </div>
-                  ))}
-                </div>
+              <div className="tech-stack">
+                {project.technologies?.map((techUrl, idx) => (
+                  <div key={idx} className="tech-pill">
+                    <img src={techUrl} alt="tech" />
+                  </div>
+                ))}
+              </div>
+
+              <div className="tech-stack">
+                <p>{project.technologies}</p>
               </div>
             </div>
           </div>
