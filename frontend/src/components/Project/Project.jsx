@@ -3,13 +3,6 @@ import "./Project.css";
 import { projectsData } from "../../assets/assets";
 
 const Project = () => {
-  const webProjects = projectsData.filter(
-    (project) => project.category === "Web"
-  );
-  const mobileProjects = projectsData.filter(
-    (project) => project.category === "Mobile"
-  );
-
   const handleProjectClick = (link) => {
     if (link) {
       window.open(link, "_blank");
@@ -21,60 +14,44 @@ const Project = () => {
   return (
     <div id="project" className="project">
       <div className="project-header">
-        <h1>My project</h1>
-        <p>Here show my projects</p>
+        <h1>My Projects</h1>
+        <p>Discover my latest work & experiments.</p>
       </div>
 
       <div className="project-container">
-        <div className="project-left">
-          {webProjects.map((project, index) => (
-            <div
-              key={index}
-              className="project-web"
-              onClick={() => handleProjectClick(project.link)}
-            >
-              <div className="project-web-img">
-                <img src={project.image} alt="" />
-              </div>
-              <div className="project-web-info">
+        {projectsData.map((project, index) => (
+          <div
+            key={index}
+            className="project-card"
+            onClick={() => handleProjectClick(project.link)}
+          >
+            <div className="project-img-wrapper">
+              <div className="glow-effect"></div>
+              <img
+                className={project.name}
+                src={project.image}
+                alt={project.title}
+              />
+            </div>
+
+            <div className="project-info">
+              <div className="info-text">
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
+              </div>
 
+              <div className="project-footer">
                 <div className="tech-stack">
-                  {project.technologies?.map((techUrl, index) => (
-                    <img key={index} src={techUrl} alt="" />
+                  {project.technologies?.map((techUrl, idx) => (
+                    <div key={idx} className="tech-pill">
+                      <img src={techUrl} alt="tech" />
+                    </div>
                   ))}
                 </div>
               </div>
             </div>
-          ))}
-        </div>
-        <div className="project-right">
-          {mobileProjects.map((project, index) => (
-            <div
-              key={index}
-              className="project-mobile"
-              onClick={() => handleProjectClick(project.link)}
-            >
-              <div className="project-mobile-img">
-                <img src={project.image} alt="" />
-              </div>
-              <div className="project-mobile-info">
-                <h2>
-                  EcoTrack
-                  {/* <br /> */}
-                  {/* <span>Waste Sorting App</span> */}
-                </h2>
-                <p>{project.description}</p>
-                <div className="tech-stack">
-                  {project.technologies?.map((techUrl, index) => (
-                    <img key={index} src={techUrl} alt="" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

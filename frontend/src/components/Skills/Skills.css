@@ -8,6 +8,13 @@ img {
   width: 50px;
 }
 
+.skills-header h1 {
+  color: #b4b4b4;
+}
+
+.skills-header p {
+  color: #94a3b8;
+}
 .skills {
   display: flex;
   flex-direction: column;
@@ -29,7 +36,7 @@ img {
 .skill-name {
   font-size: 14px;
   font-weight: 400;
-  color: #d9dadb; 
+  color: #d9dadb;
 
   transition: color 0.3s;
 }

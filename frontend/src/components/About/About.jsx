@@ -42,7 +42,7 @@ const About = () => {
             <i className="fa-solid fa-envelope"></i>
           </a>
         </div>
-        <button>Download my CV</button>
+        {/* <button>Download my CV</button> */}
       </div>
 
       <div className="avatar">
