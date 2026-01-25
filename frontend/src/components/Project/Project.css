@@ -5,25 +5,21 @@
 .project {
   background-color: transparent;
   min-height: 100vh;
-  padding: 60px 12%;
+  padding: 60px 15%;
   display: flex;
   flex-direction: column;
 }
 
-/* --- Header --- */
+/* header */
 .project-header {
   text-align: center;
   margin-bottom: 60px;
 }
 
 .project-header h1 {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 700;
   color: #b4b4b4;
-  margin: 0;
-  /* background: linear-gradient(to bottom, #ffffff, #b4b4b4); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
 }
 
 .project-header p {
@@ -38,24 +34,25 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
-/* --- Project Card --- */
 .project-card {
   background: rgba(30, 41, 59, 0.4);
-  border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  border-radius: 24px;
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
+  position: relative;
+
   transition: all 0.4s ease;
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  position: relative;
-  height: 100%; /* Đảm bảo card cao đều nhau */
 }
 
 .project-card:hover {
@@ -64,27 +61,24 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
-/* --- PHẦN QUAN TRỌNG: SỬA ẢNH TO --- */
 .project-img-wrapper {
   position: relative;
-  /* Tăng chiều cao vùng chứa ảnh lên để ảnh có không gian lớn hơn */
-  height: 300px;
+  height: 360px;
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Giảm padding xuống để ảnh sát viền hơn */
-  padding: 10px;
+
+  padding: 0px;
   box-sizing: border-box;
-  overflow: visible; /* Cho phép hiệu ứng glow lan ra ngoài chút nếu cần */
+  overflow: visible;
 }
 
-/* Hiệu ứng ánh sáng xanh phía sau ảnh */
-.glow-effect {
+/* .glow-effect {
   position: absolute;
-  /* Tăng kích thước glow lên */
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   background: radial-gradient(
     circle,
     rgba(56, 189, 248, 0.4) 0%,
@@ -95,30 +89,37 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   pointer-events: none;
-}
+} */
 
 .project-img-wrapper img {
   position: relative;
-  z-index: 2;
-  /* QUAN TRỌNG: Ép ảnh chiếm 85% chiều rộng của card */
-  width: 85%;
-  height: auto; /* Chiều cao tự động theo tỷ lệ ảnh */
-
-  /* Nếu ảnh quá cao thì giới hạn lại, nhưng ưu tiên width */
-  max-height: 100%;
-
-  object-fit: contain;
-  filter: drop-shadow(
-    0 15px 30px rgba(0, 0, 0, 0.6)
-  ); /* Bóng đổ đậm hơn để tạo chiều sâu 3D */
-  transition: transform 0.4s ease;
+  z-index: 10;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5)); /* Bóng đổ chung */
 }
 
 .project-card:hover .project-img-wrapper img {
-  transform: scale(1.08) translateY(-5px); /* Zoom nhẹ khi hover */
+  transform: scale(1.05) translateY(-5px); /* Zoom nhẹ khi hover */
 }
 
-/* --- Phần Thông tin (Giữ nguyên) --- */
+.project-img-wrapper img.food {
+  width: 90%;
+  height: auto;
+  max-width: 450px;
+  object-fit: contain;
+}
+
+.project-img-wrapper img.ecotrack {
+  height: 90%;
+  width: auto;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.project-card:hover .project-img-wrapper img {
+  transform: scale(1.05) translateY(-10px);
+}
+
 .project-info {
   background: rgba(15, 23, 42, 0.7);
   padding: 25px;
@@ -176,6 +177,22 @@
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .project-img-wrapper {
+    height: 250px; /* Mobile thì vùng chứa thấp hơn */
+  }
+
+  /* Trên mobile, laptop cần to hơn chút để rõ chi tiết */
+  .project-img-wrapper img.food {
+    width: 95%;
+  }
+
+  /* Trên mobile, điện thoại cần nhỏ lại xíu để không sát lề trên dưới */
+  .project-img-wrapper img.ecotrack {
+    height: 85%;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .project-container {
@@ -187,9 +204,4 @@
   .project-img-wrapper img {
     width: 70%; /* Mobile thì ảnh nhỏ lại chút cho vừa mắt */
   }
-}
-
-/* Viết thế này sẽ mạnh hơn .project-card img */
-.project-card .project-img-wrapper .food {
-  height: 500px;
 }
