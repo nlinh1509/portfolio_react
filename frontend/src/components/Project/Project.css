@@ -64,7 +64,7 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
-.project-img-wrapper {
+.project-img {
   position: relative;
   height: 380px;
   width: 100%;
@@ -78,28 +78,28 @@
   overflow: visible;
 }
 
-.project-img-wrapper img {
+.project-img img {
   position: relative;
   z-index: 10;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5)); /* Bóng đổ chung */
 }
 
-.project-img-wrapper img.food {
+.project-img img.food {
   width: 90%;
   height: auto;
   max-width: 450px;
   object-fit: contain;
 }
 
-.project-img-wrapper img.ecotrack {
+.project-img img.ecotrack {
   height: 90%;
   width: auto;
   max-height: 320px;
   object-fit: contain;
 }
 
-.project-card:hover .project-img-wrapper img {
+.project-card:hover .project-img img {
   transform: scale(1.05) translateY(-10px);
 }
 
@@ -201,17 +201,17 @@
 /* respon */
 
 @media (max-width: 768px) {
-  .project-img-wrapper {
+  .project-img {
     height: 250px; /* Mobile thì vùng chứa thấp hơn */
   }
 
   /* Trên mobile, laptop cần to hơn chút để rõ chi tiết */
-  .project-img-wrapper img.food {
+  .project-img img.food {
     width: 95%;
   }
 
   /* Trên mobile, điện thoại cần nhỏ lại xíu để không sát lề trên dưới */
-  .project-img-wrapper img.ecotrack {
+  .project-img img.ecotrack {
     height: 85%;
   }
 }
@@ -221,10 +221,10 @@
   .project-container {
     grid-template-columns: 1fr;
   }
-  .project-img-wrapper {
+  .project-img {
     height: 250px; /* Mobile thì giảm chiều cao chút */
   }
-  .project-img-wrapper img {
+  .project-img img {
     width: 70%; /* Mobile thì ảnh nhỏ lại chút cho vừa mắt */
   }
 }

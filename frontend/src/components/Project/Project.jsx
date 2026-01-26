@@ -25,8 +25,7 @@ const Project = () => {
             className="project-card"
             onClick={() => handleProjectClick(project.link)}
           >
-            <div className="project-img-wrapper">
-              <div className="glow-effect"></div>
+            <div className="project-img">
               <img
                 className={project.name}
                 src={project.image}
