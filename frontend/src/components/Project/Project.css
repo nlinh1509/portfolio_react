@@ -133,37 +133,72 @@
 .tech-stack {
   display: flex;
   gap: 10px;
-  color: #c1c1c1;
+  flex-wrap: wrap;
 }
 
 .tech-items {
-  width: 60px;
-  border: 0.1px solid #c1c1c1;
   border-radius: 100px;
-  padding: 6px 12px;
-
+  padding: 6px 14px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-size: 0.9rem;
+  border: 1px solid #444;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #c1c1c1;
 }
 
-/* 
-.tech-pill {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tech-items.reactjs {
+  color: #61dafb;
+  border-color: rgba(97, 218, 251, 0.4);
+  background-color: rgba(97, 218, 251, 0.1);
+  text-shadow: 0 0 8px rgba(97, 218, 251, 0.6);
 }
 
-.tech-pill img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-} */
+.tech-items.nodejs {
+  color: #6cc24a;
+  border-color: rgba(108, 194, 74, 0.4);
+  background-color: rgba(108, 194, 74, 0.1);
+  text-shadow: 0 0 8px rgba(108, 194, 74, 0.6);
+}
+
+.tech-items.mongodb {
+  color: #01ce56cf;
+  border-color: rgba(0, 237, 100, 0.4);
+  background-color: rgba(0, 237, 100, 0.1);
+  text-shadow: 0 0 8px rgba(0, 237, 100, 0.6);
+}
+
+.tech-items.flutter {
+  color: #42a5f5;
+  border-color: rgba(66, 165, 245, 0.4);
+  background-color: rgba(66, 165, 245, 0.1);
+  text-shadow: 0 0 8px rgba(66, 165, 245, 0.6);
+}
+
+.tech-items.firebase {
+  color: #ffc928d3;
+  border-color: rgba(255, 202, 40, 0.4);
+  background-color: rgba(255, 202, 40, 0.1);
+  text-shadow: 0 0 8px rgba(255, 201, 40, 0.4);
+}
+
+.tech-items.cloudinary {
+  color: #3448c5;
+  border-color: rgba(52, 72, 197, 0.4);
+  background-color: rgba(52, 72, 197, 0.1);
+  text-shadow: 0 0 8px rgba(52, 72, 197, 0.6);
+}
+
+.tech-items.clip-ai {
+  color: #11b38b;
+  border-color: rgba(16, 163, 127, 0.4);
+  background-color: rgba(16, 163, 127, 0.1);
+  text-shadow: 0 0 8px rgb(16, 163, 126);
+}
+
+/* respon */
 
 @media (max-width: 768px) {
   .project-img-wrapper {

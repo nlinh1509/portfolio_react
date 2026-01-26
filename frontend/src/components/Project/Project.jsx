@@ -50,8 +50,8 @@ const Project = () => {
 
               <div className="tech-stack">
                 {project.technologies?.map((item, index) => (
-                  <div key={index} className="tech-items">
-                    {item}
+                  <div key={index} className={"tech-items " + item.name}>
+                    {item.tech}
                   </div>
                 ))}
               </div>

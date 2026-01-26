@@ -19,7 +19,11 @@ export const projectsData = [
     //   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg",
     //   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     // ],
-    technologies: ["React", "AI", "CSS"],
+    technologies: [
+      { tech: "ReactJS", name: "reactjs" },
+      { tech: "NodeJS", name: "nodejs" },
+      { tech: "MongoDB", name: "mongodb" },
+    ],
     link: "https://github.com/nlinh1509/Food_delivery",
   },
 
@@ -34,7 +38,12 @@ export const projectsData = [
     //   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
     //   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
     // ],
-    technologies: ["React", "AI", "CSS"],
+    technologies: [
+      { tech: "Flutter", name: "flutter" },
+      { tech: "Firebase", name: "firebase" },
+      { tech: "Cloudinary", name: "cloud" },
+      { tech: "CLIP AI", name: "clip-ai" },
+    ],
     link: "https://github.com/trmzaiu/ecotrack-waste-sorting",
   },
 ];
