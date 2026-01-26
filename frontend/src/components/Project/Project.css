@@ -207,7 +207,7 @@
 
 @media (max-width: 1050px) {
   .project {
-    padding: 60px 8%;
+    padding: 0px 8%;
   }
   .project-header {
     margin-bottom: 40px;
