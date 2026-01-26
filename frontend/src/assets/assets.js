@@ -1,4 +1,4 @@
-import avatar from "./avatar.png";
+import avatar from "./avatar-profile.png";
 import iphone from "./iphone.png";
 import laptop from "./laptop.png";
 
