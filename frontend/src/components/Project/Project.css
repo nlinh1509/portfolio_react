@@ -338,7 +338,7 @@
   .project-img {
     width: 100%;
     height: 220px;
-    box-shadow: 0 0 25px rgba(97, 218, 251, 0.4);
+    box-shadow: 0 0 240px rgba(97, 218, 251, 0.4);
   }
 
   .project-img img.food {
