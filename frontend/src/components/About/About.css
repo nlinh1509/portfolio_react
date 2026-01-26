@@ -14,7 +14,7 @@
 }
 .about .content h1 {
   color: #e2e8f0;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.2;
   margin-bottom: 15px;
   font-weight: 700;
@@ -22,7 +22,7 @@
 
 .about .content h2 {
   color: #e2e8f0;
-  font-size: 28px; 
+  font-size: 24px; 
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -41,7 +41,7 @@
   margin-bottom: 10px;
 
   max-width: 90%;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.3px;
@@ -62,8 +62,8 @@
 
 .social a {
   display: inline-flex;
-  font-size: 36px;
-  width: 36px;
+  font-size: 34px;
+  width: 34px;
   color: #416eb6;
   transition: all 0.4s ease;
 }
