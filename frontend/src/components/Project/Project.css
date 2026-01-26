@@ -34,7 +34,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .project-card {
@@ -82,7 +82,7 @@
   padding: 0px;
   box-sizing: border-box;
   overflow: visible;
-  box-shadow: 0 0 25px rgba(97, 218, 251, 0.4);
+  box-shadow: 0 0 200px rgba(97, 218, 251, 0.35);
 }
 
 .project-img img {
@@ -246,21 +246,69 @@
 
 @media (max-width: 900px) {
   .project {
-    padding: 50px 5%;
+    padding: 50px 6%;
+  }
+
+  .project-header {
+    margin-bottom: 40px;
+  }
+  .project-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-header p {
+    margin-top: 8px;
+    font-size: 0.8rem;
   }
 
   .project-container {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-direction: column;
   }
 
-  .project-header h1 {
-    font-size: 1.6rem;
+  .project-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .project-img {
+    height: 280px;
+
+    width: 40%;
+    box-shadow: 0 0 300px rgba(97, 218, 251, 0.35);
+  }
+
+  .project-img img.food {
+    max-width: 400px;
+  }
+
+  .project-img img.ecotrack {
+    max-height: 200px;
+  }
+
+  .project-info {
+    justify-content: center;
+  }
+
+  .info-text h2 {
+    font-size: 1rem;
+    color: #e2e8f0;
+  }
+
+  .info-text p {
+    font-size: 0.75rem;
+  }
+
+  .tech-items {
+    padding: 3px 10px;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 750px) {
   .project {
-    padding: 80px 20px;
+    padding: 60px 60px;
     min-height: auto;
   }
 
@@ -269,38 +317,50 @@
   }
 
   .project-header h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .project-header p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 0 10px;
   }
 
   .project-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
   }
 
   .project-card {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .project-img {
-    height: 250px;
+    width: 100%;
+    height: 220px;
+    box-shadow: 0 0 25px rgba(97, 218, 251, 0.4);
   }
 
   .project-img img.food {
-    max-width: 80%;
+    max-height: 80%;
+    
   }
 
   .project-img img.ecotrack {
     max-height: 80%;
   }
 
+  .info-text h2 {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+  }
+
+  .info-text p {
+    font-size: 0.75rem;
+  }
+
   .tech-items {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 5px 10px;
   }
 }

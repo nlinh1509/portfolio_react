@@ -10,13 +10,10 @@
   gap: 30px;
 }
 
-img {
-  width: 50px;
-}
-
 .skills-header {
   text-align: center;
   margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .skills-header h1 {
@@ -42,10 +39,127 @@ img {
   gap: 40px;
   width: 60%;
 }
+
+.skills-items img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
 .skill-name {
   font-size: 15px;
   font-weight: 500;
   color: #cbd5e1;
   margin-top: 10px;
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 1050px) {
+  .skills {
+    gap: 0px;
+    padding: 60px 0px;
+  }
+
+  .skills-header {
+    margin-bottom: 50px;
+  }
+
+  .skills-header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .skills-header p {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    width: 80%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+  }
+
+  .skills-items img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+    margin-top: 8px;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills {
+    gap: 0px;
+    padding: 60px 0px;
+  }
+
+  .skills-header {
+    margin-bottom: 30px;
+  }
+
+  .skills-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .skills-header p {
+    font-size: 0.8rem;
+  }
+
+  .skills-grid {
+    width: 70%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+
+  .skills-items img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-name {
+    font-size: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills {
+    /* min-height: auto; */
+    padding: 60px 0px;
+  }
+
+  .skills-grid {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 0px;
+  }
+
+  .skills-items img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skill-name {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .skills-header {
+    margin-bottom: 40px;
+  }
+
+  .skills-header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .skills-header p {
+    font-size: 0.7rem;
+  }
+
 }

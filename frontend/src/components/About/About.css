@@ -248,7 +248,7 @@
   .about {
     flex-direction: column-reverse;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
     height: auto;
     padding-bottom: 60px;
   }
@@ -287,4 +287,3 @@
     height: 300px;
   }
 }
-
