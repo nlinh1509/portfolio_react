@@ -22,7 +22,7 @@ const Navbar = () => {
     // <div className="navbar">
     <div className={scrolled ? "navbar-scrolled" : "navbar-top"}>
       <Link className="name" to="/">
-        le vo nhat linh
+        Le Vo Nhat Linh
       </Link>
 
       <ul className="navbar-center">
@@ -44,12 +44,12 @@ const Navbar = () => {
         >
           <a href="#skills">Skills</a>
         </li>
-        <li
+        {/* <li
           onClick={() => setItems("education")}
           className={item === "education" ? "active" : "no-active"}
         >
           <a href="#">Education</a>
-        </li>
+        </li> */}
         {/*         
         <li
           onClick={() => setItems("experience")}
@@ -59,7 +59,7 @@ const Navbar = () => {
         </li> */}
       </ul>
 
-      <button>Contact me</button>
+      <button>Download my CV</button>
     </div>
   );
 };

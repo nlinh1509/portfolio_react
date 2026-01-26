@@ -50,12 +50,16 @@ export const projectsData = [
 
 export const techLogo = [
   {
-    name: "Javascript",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    name: "HTML",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
   {
     name: "CSS",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg",
+  },
+  {
+    name: "Javascript",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
     name: "Tailwind CSS",
@@ -70,22 +74,17 @@ export const techLogo = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
-    name: "React",
+    name: "React.js",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    name: "Next.js",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    style: "icon-white", // Logo đen -> cần đảo màu
   },
   {
     name: "Node.js",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
-
   {
-    name: "PostgreSQL",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    name: "Next.js",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    style: "icon-white", // Logo đen -> cần đảo màu
   },
   {
     name: "MongoDB",

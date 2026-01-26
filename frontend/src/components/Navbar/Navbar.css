@@ -13,7 +13,6 @@
   box-sizing: border-box;
   z-index: 1000;
 
-  background-color: #27374f;
   background-color: #21252d;
   background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
   background-size: 100px 100px;
@@ -26,6 +25,7 @@
 
 .name {
   font-size: 18px;
+  color: #e2e8f0;
 }
 a {
   font-size: 15px;
@@ -41,15 +41,15 @@ a {
 }
 
 .navbar-center li {
-  list-style: none; 
+  list-style: none;
   font-weight: 500;
 }
 
 .navbar-center li a {
-  position: relative; 
-  text-decoration: none; 
+  position: relative;
+  text-decoration: none;
   cursor: pointer;
-  color: #abb6c6;
+  color: #e2e8f0;
   transition: color 0.3s;
 }
 
@@ -83,7 +83,7 @@ button {
   border-radius: 50px;
   font-weight: 600;
   background: transparent;
-  color: #fff;
+  color: #e2e8f0;
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 13px;
 

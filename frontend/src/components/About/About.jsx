@@ -7,18 +7,14 @@ const About = () => {
     <div className="about">
       <div className="content">
         <h1>Le Vo Nhat Linh</h1>
-        <h1>
-          Hi, I'm <span>a Developer</span>
-        </h1>
+        <h2>
+          Hi, I'm <span>a Frontend / Full-stack Developer</span>
+        </h2>
+        <p>Final-year student with a solid foundation in the MERN Stack.</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-          necessitatibus fugiat illum, minima facere quibusdam possimus dolores
-          in hic nostrum! lo
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Exercitationem culpa delectus quod neque esse, architecto natus animi
-          repellat rerum? Doloremque deserunt repellat culpa voluptatem
+          I am seeking a Frontend/Fullstack Internship to apply my skills to
+          real-world projects. With a proactive mindset, I am ready to adapt
+          quickly, tackle challenges, and always eager to learn.
         </p>
 
         <div className="social">
