@@ -8,7 +8,7 @@ const About = () => {
       <div className="content">
         <h1>Le Vo Nhat Linh</h1>
         <h2>
-          Hi, I'm <span>a Frontend / Full-stack Developer</span>
+          Hi, I'm <span>a Frontend Developer</span>
         </h2>
         <p>Final-year student with a solid foundation in the MERN Stack.</p>
         <p>
@@ -23,7 +23,7 @@ const About = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </a>
 
           <a

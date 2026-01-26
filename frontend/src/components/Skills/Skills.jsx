@@ -10,7 +10,7 @@ const Skills = () => {
         <p>The skills, tools and technologies I am really good at:</p>
       </div>
 
-      {/* <div className="skills-grid">
+      <div className="skills-grid">
         {techLogo.map((skill, index) => (
           <div key={index} className="skills-items">
             <div className="icon">
@@ -23,21 +23,8 @@ const Skills = () => {
             <p className="skill-name"> {skill.name}</p>
           </div>
         ))}
-      </div> */}
-
-      <div className="skills-grid">
-        {techLogo.map((item, index) => (
-          <div key={index} className="skill-card">
-            {/* Thêm class 'invert-white' nếu cần đảo màu (cho Next.js) */}
-            <img
-              src={item.url}
-              alt={item.name}
-              className={item.style === "icon-white" ? "invert-white" : ""}
-            />
-            <p className="skill-name">{item.name}</p>
-          </div>
-        ))}
       </div>
+
     </div>
   );
 };

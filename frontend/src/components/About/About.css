@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 100%;
+  width: auto;
   gap: 60px;
   /* margin-top: -50px; */
   /* margin: -40px 0px; */
@@ -25,10 +25,6 @@
   font-size: 28px; /* Hoặc 40px tùy thích */
   font-weight: 700;
   margin-bottom: 15px;
-}
-
-.about .content span {
-  /* text-shadow: 0 0 20px #87a4d356; */
 }
 
 .about .content span {
@@ -169,3 +165,126 @@
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
+
+@media (max-width: 1050px) {
+  .about {
+    gap: 20px;
+    /* padding: 40px 0px 0px 0px; */
+  }
+
+  .about .content {
+    max-width: 42vw;
+  }
+  .about .content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .about .content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .about .content p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .about .content p:last-of-type {
+    margin-bottom: 15px;
+  }
+
+  .social a {
+    font-size: 30px;
+    width: 30px;
+  }
+
+  .avatar {
+    width: 380px;
+    height: 380px;
+  }
+  .avatar img {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    gap: 20px;
+    padding: 40px 0px 0px 0px;
+  }
+
+  .about .content h1 {
+    font-size: 24px;
+  }
+
+  .about .content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about .content p {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .social a {
+    font-size: 28px;
+    width: 28px;
+  }
+
+  .avatar {
+    width: 280px;
+    height: 280px;
+  }
+  .avatar img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 750px) {
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .about .content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .about .content h1 {
+    font-size: 24px;
+  }
+
+  .about .content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about .content p {
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding: 0 25px;
+  }
+
+  .social a {
+    font-size: 28px;
+    width: 28px;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+  }
+}
+

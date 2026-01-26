@@ -19,7 +19,6 @@ const Navbar = () => {
   }, []);
 
   return (
-    // <div className="navbar">
     <div className={scrolled ? "navbar-scrolled" : "navbar-top"}>
       <Link className="name" to="/">
         Le Vo Nhat Linh

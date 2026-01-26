@@ -205,33 +205,102 @@
   text-shadow: 0 0 8px rgb(16, 163, 126);
 }
 
-/* respon */
+@media (max-width: 1050px) {
+  .project {
+    padding: 60px 8%;
+  }
+  .project-header {
+    margin-bottom: 40px;
+  }
+  .project-header h1 {
+    font-size: 1.6rem;
+  }
 
-@media (max-width: 768px) {
+  .project-header p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .project-container {
+    gap: 30px;
+  }
+
   .project-img {
-    height: 250px; /* Mobile thì vùng chứa thấp hơn */
+    height: 320px;
   }
 
-  /* Trên mobile, laptop cần to hơn chút để rõ chi tiết */
-  .project-img img.food {
-    width: 95%;
+  .info-text h2 {
+    font-size: 1.1rem;
+    color: #e2e8f0;
   }
 
-  /* Trên mobile, điện thoại cần nhỏ lại xíu để không sát lề trên dưới */
-  .project-img img.ecotrack {
-    height: 85%;
+  .info-text p {
+    font-size: 0.8rem;
+  }
+
+  .tech-items {
+    padding: 4px 12px;
+    font-size: 0.85rem;
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .project {
+    padding: 50px 5%;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .project-header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .project {
+    padding: 80px 20px;
+    min-height: auto;
+  }
+
+  .project-header {
+    margin-bottom: 40px;
+  }
+
+  .project-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-header p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
   .project-container {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
+
+  .project-card {
+    display: flex;
+    flex-direction: row;
+  }
+
   .project-img {
-    height: 250px; /* Mobile thì giảm chiều cao chút */
+    height: 250px;
   }
-  .project-img img {
-    width: 70%; /* Mobile thì ảnh nhỏ lại chút cho vừa mắt */
+
+  .project-img img.food {
+    max-width: 80%;
+  }
+
+  .project-img img.ecotrack {
+    max-height: 80%;
+  }
+
+  .tech-items {
+    font-size: 0.8rem;
+    padding: 5px 10px;
   }
 }
