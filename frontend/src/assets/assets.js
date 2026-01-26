@@ -41,7 +41,7 @@ export const projectsData = [
     technologies: [
       { tech: "Flutter", name: "flutter" },
       { tech: "Firebase", name: "firebase" },
-      { tech: "Cloudinary", name: "cloud" },
+      { tech: "Cloudinary", name: "cloudinary" },
       { tech: "CLIP AI", name: "clip-ai" },
     ],
     link: "https://github.com/trmzaiu/ecotrack-waste-sorting",
