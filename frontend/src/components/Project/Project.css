@@ -350,6 +350,10 @@
     max-height: 90%;
   }
 
+  .project-info{
+    padding-top: 20px;
+  }
+
   .info-text h2 {
     font-size: 0.9rem;
     color: #e2e8f0;
