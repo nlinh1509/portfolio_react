@@ -212,7 +212,7 @@
 @media (max-width: 900px) {
   .about {
     gap: 20px;
-    padding: 40px 0px 0px 0px;
+    /* padding: 40px 0px 0px 0px; */
   }
 
   .about .content h1 {
@@ -248,7 +248,7 @@
   .about {
     flex-direction: column-reverse;
     text-align: center;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     height: auto;
     padding-bottom: 60px;
   }
