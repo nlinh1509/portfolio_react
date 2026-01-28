@@ -58,7 +58,14 @@ const Navbar = () => {
         </li> */}
       </ul>
 
-      <button>Download my CV</button>
+      <a
+        href="/Le Vo Nhat Linh_FE intern.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="download"
+      >
+        Download my CV
+      </a>
     </div>
   );
 };

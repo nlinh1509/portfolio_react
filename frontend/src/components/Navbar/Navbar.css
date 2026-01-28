@@ -77,7 +77,7 @@ a {
   transform: scaleX(1);
 }
 
-button {
+.download {
   cursor: pointer;
   padding: 12px 22px 10px 22px;
   border-radius: 50px;
@@ -90,7 +90,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.download:hover {
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.9);
 }
@@ -113,7 +113,7 @@ button:hover {
     font-size: 13px;
   }
 
-  button {
+  .download {
     font-size: 12px;
     padding: 8px 16px;
   }
@@ -133,7 +133,7 @@ button:hover {
     font-size: 12px;
   }
 
-  button {
+  .download {
     font-size: 11px;
     padding: 6px 14px;
   }
