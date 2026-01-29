@@ -12,7 +12,7 @@ const About = () => {
         </h2>
         <p>Final-year student with a solid foundation in the MERN Stack.</p>
         <p>
-          I am seeking a Frontend/Fullstack Internship to apply my skills to
+          I am seeking a Frontend/Fullstack to apply my skills to
           real-world projects. With a proactive mindset, I am ready to adapt
           quickly, tackle challenges, and always eager to learn.
         </p>
