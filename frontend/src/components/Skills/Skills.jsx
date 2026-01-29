@@ -7,7 +7,10 @@ const Skills = () => {
     <div id="skills" className="skills">
       <div className="skills-header">
         <h1>Skills</h1>
-        <p>The skills, tools and technologies I am really good at:</p>
+        <p>
+          The technical stack and tools I use to build scalable and efficient
+          solutions.
+        </p>
       </div>
 
       <div className="skills-grid">
@@ -24,7 +27,6 @@ const Skills = () => {
           </div>
         ))}
       </div>
-
     </div>
   );
 };

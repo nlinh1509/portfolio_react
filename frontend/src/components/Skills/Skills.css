@@ -12,7 +12,7 @@
 
 .skills-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 0 20px;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .skills-items img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 .skill-name {
@@ -59,7 +59,7 @@
   }
 
   .skills-header {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .skills-header h1 {
@@ -78,8 +78,8 @@
   }
 
   .skills-items img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 
   .skill-name {
