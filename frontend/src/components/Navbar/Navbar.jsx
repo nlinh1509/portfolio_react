@@ -64,7 +64,7 @@ const Navbar = () => {
         rel="noopener noreferrer"
         className="download"
       >
-        Download my CV
+        My resume
       </a>
     </div>
   );
